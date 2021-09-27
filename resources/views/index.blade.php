@@ -45,7 +45,7 @@
 
             </div>
             <div class="col-sm-4">
-                <div class="row px-md-3 py-md-3 rounded bg-light row-cols-1  d-flex flex-column justify-content-start align-items-start h-100">
+                <div class="row px-md-3 py-3 rounded bg-light row-cols-1  d-flex flex-column justify-content-start align-items-start h-100">
                 @foreach($stories->slice(2, 4) as $story)
                     <!-- post -->
                         <div class="col mb-3">
@@ -185,7 +185,7 @@
 
 
                             <p class="mb-2 mt-3">
-                                {!! nl2br(\Illuminate\Support\Str::words(strip_tags(htmlspecialchars_decode($story['main']->description)), 30)) !!}
+                                {!! nl2br(\Illuminate\Support\Str::words(strip_tags(htmlspecialchars_decode($story['main']->description)), 60)) !!}
                             </p>
                         </div>
                     </div>
@@ -193,7 +193,7 @@
 
             </div>
             <div class="col-sm-4">
-                <div class="row px-md-3 py-md-3 rounded bg-light row-cols-1  d-flex flex-column justify-content-start align-items-start h-100">
+                <div class="row px-md-3 py-3 rounded bg-light row-cols-1  d-flex flex-column justify-content-start align-items-start h-100">
                 @foreach($stories->slice(12, 4) as $story)
                     <!-- post -->
                         <div class="col mb-3">
