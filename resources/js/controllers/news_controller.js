@@ -1,5 +1,5 @@
 /* eslint-disable no-useless-escape */
-import { Controller } from 'stimulus';
+import { Controller } from '@hotwired/stimulus';
 
 const PORTION_COUNT = 7;
 

@@ -23,7 +23,8 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "bootstrap": "^5.0.0-alpha4",
-        "stimulus": "^2.0.0"
+        "bootstrap": "^5.0.1",
+        "@hotwired/stimulus": "^3.0.0",
+        "@hotwired/stimulus-webpack-helpers": "^1.0.1"
     }
 }

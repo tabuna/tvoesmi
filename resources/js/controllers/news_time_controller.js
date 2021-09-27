@@ -1,4 +1,4 @@
-import { Controller } from 'stimulus';
+import { Controller } from '@hotwired/stimulus';
 import { timeSince } from '../lib/format_date';
 
 export default class extends Controller {
