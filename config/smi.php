@@ -128,7 +128,11 @@ return [
 
 
         // blogs
-        'https://varlamov.ru/data/rss'
+        'https://varlamov.ru/data/rss',
+
+
+        'https://rss.unian.net/site/news_rus.rss?',
+          
     ],
 
     /*
