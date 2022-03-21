@@ -351,7 +351,7 @@
                             <div>{{ $story['main']->domain }}</div>
                         </div>
 
-                        <h3 class="mb-2 text-break">{{ $story['main']->title }}</h3>
+                        <h4 class="mb-2 text-break">{{ $story['main']->title }}</h4>
                         <time class="me-1 text-muted small mt-auto" datetime="{{ $story['main']->pubDate->jsonSerialize() }}"
                               data-controller="news-time">
                             {{ $story['main']->pubDate->jsonSerialize() }}
