@@ -21,7 +21,7 @@ jobs:
       - name: Setup PHP 🔧
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 7.4
+          php-version: 8.1
           ini-values: opcache.enable_cli=1, opcache.jit=tracing
           extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, bcmath, soap, intl, gd, exif, iconv, imagick, fileinfo
           coverage: none
@@ -37,7 +37,7 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
       - name: Install dependencies 🔧
         run: |
-          composer self-update         
+          composer self-update
           composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
       - name: TimeZone ⏰
         run: |
