@@ -1,48 +1,38 @@
 <article class="bg-white pt-3 px-3 mb-4 rounded shadow-sm">
 
-    <div class="row mb-3">
-        @empty(!$image)
-            <div class="col-12 col-md-5">
-                <img
-                    src="{{ $image }}"
-                    class="img-full rounded border bg-secondary bg-gradient-secondary"
-                    alt="{{$title}}"
-                    loading="lazy"
-                >
-            </div>
-        @endempty
+    <div class="row">
         <div class="col d-flex flex-column">
             <div class="row">
-                <div class="pt-3 col d-flex flex-column">
-                    <div class="v-center mb-1">
-                        <img src="{{ $favicon }}" class="me-2" alt="{{ $domain }}" loading="lazy">
-                        <div>{{ $domain }}</div>
-                    </div>
-                    <h2 class="text-dark font-weight-bolder">{{$title}}</h2>
-                    @if($single)
-                        <time class="mb-2 text-muted small" datetime="{{ $pubDate }}" data-controller="news-time">
-                            {{ $pubDate }}
-                        </time>
-                    @endif
+                <div class="col d-flex flex-column">
 
-                </div>
-
-                <div class="d-flex mt-auto">
-                    @if($single)
-                        <div class="d-flex ml-auto">
-                            @include('particles.share', ['url' => $internalLink])
-
-                            <a href="{{ $link }}" target="_blank" class="btn btn-secondary ml-2">Читать далее</a>
+                    @empty(!$image)
+                        <div class="col-12 col-auto"> <!-- col-md-5 -->
+                            <img
+                                src="{{ $image }}"
+                                class="img-full rounded border bg-secondary bg-gradient-secondary mb-2"
+                                onerror="this.style.display='none';"
+                                onload="this.style.display='block';"
+                                alt="{{$title}}"
+                                style="display: none;"
+                            >
                         </div>
-                    @else
-                        <div class="v-center mb-1 me-auto">
+                    @endempty
+
+                    <h2 class="text-dark font-weight-bolder">
+                        <a href="{{ $link }}" target="_blank">{{$title}}</a>
+                    </h2>
+
+                    <div class="d-flex align-items-center mb-2">
+
+                        {{--
+                        <div class="v-center me-2">
                             @if($sources->count() > 10)
                                 @foreach($sources->take(5) as $domain => $favicon)
                                     <img src="{{ $favicon }}" class="me-1" alt="{{ $domain }}" loading="lazy">
                                 @endforeach
 
                                 <small class="text-muted">И ещё {{ $sources->count() - 5 }} источников написали об
-                                    этом</small>
+                                                          этом</small>
 
                             @else
 
@@ -52,9 +42,13 @@
 
                             @endif
                         </div>
+                        --}}
 
-                        @include('particles.share', ['url' => $internalLink])
-                    @endif
+                        <time class="text-muted small" datetime="{{ $pubDate }}" data-controller="news-time">
+                            {{ $pubDate }}
+                        </time>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,7 +56,7 @@
 
     @if($single)
         <p>
-            {!! nl2br($description) !!}
+            {!! Str::of($description)->words(25) !!}
         </p>
     @endif
 
@@ -70,20 +64,20 @@
         <hr>
     @endif
 
-    <div data-controller="story-items">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-            @foreach($items->take(3) as $news)
+    <div data-controller="story-items" class="position-relative">
+        <div class="row row-cols-1 row-cols-sm-2">
+            @foreach($items->take(2) as $news)
                 <x-news :news="$news"/>
             @endforeach
 
-            @foreach($items->skip(3) as $news)
+            @foreach($items->skip(2) as $news)
                 <x-news :news="$news" class="d-none"/>
             @endforeach
         </div>
 
-        @if($items->count() > 3)
-            <div class="text-center pb-3">
-                <button class="btn" data-action="story-items#show" title="Больше источников" data-target="story-items.showMoreBtn">
+        @if($items->count() > 2)
+            <div class="text-center pb-3 position-absolute bottom-0 start-0 end-0 bg-white opacity-50">
+                <button class="btn w-100" data-action="story-items#show" title="Больше источников" data-target="story-items.showMoreBtn">
                     <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-down-short"
                          fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"

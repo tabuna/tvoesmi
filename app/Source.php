@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\HigherOrderCollectionProxy;
+use Tabuna\Similar\Similar;
 
 class Source
 {
@@ -42,6 +43,55 @@ class Source
                 })
                 ->sortByDesc('pubDate');
         });
+    }
+
+    /**
+     * @return \Illuminate\Support\Collection
+     */
+    public static function getMostTags(int $limit = 10)
+    {
+        $tags = [];
+
+        self::getLastNews()
+            ->map(function (News $news) {
+                return $news->getKeywordsAttribute();
+            })
+            ->each(function (array $keys) use (&$tags) {
+                foreach ($keys as $value) {
+                    if (isset($tags[$value])) {
+                        ++$tags[$value];
+                    } else {
+                        $tags[$value] = 1;
+                    }
+                }
+            });
+
+        $tags = collect($tags)
+            ->sortDesc()
+            ->map(function ($weight, $name) {
+                return new Tag($name, $weight);
+            })
+            ->take(50);
+
+
+        $similar = new Similar(function ($a, $b) {
+            similar_text((string) $a, (string) $b, $copy);
+
+            return 80 < $copy;
+        });
+
+
+        $sim = $similar->findOut($tags->toArray());
+
+        return collect($sim)
+            ->mapWithKeys(function (Collection $collection, string $name) {
+                $weight = $collection->sum->getWeight();
+
+                return [$name => $weight];
+            })
+            ->sortDesc()
+            ->take($limit)
+            ->keys();
     }
 
     /**

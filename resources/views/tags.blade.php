@@ -13,7 +13,11 @@
                         <div class="card mb-4 rounded shadow-sm">
                             @if($new->image)
                                 <a href="{{ $new->link }}" target="_blank" rel="noopener">
-                                    <img src="{{ $new->image }}" class="card-img-top img-full">
+                                    <img src="{{ $new->image }}" class="card-img-top img-full"
+                                         onerror="this.style.display='none';"
+                                         onload="this.style.display='block';"
+                                         style="display: none;"
+                                    >
                                 </a>
                             @endif
 

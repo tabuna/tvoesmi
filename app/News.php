@@ -78,6 +78,11 @@ class News extends Model implements Feedable
      */
     public function getImageAttribute(): ?string
     {
+        //$keys = Str::of($this->title)->slug(',');
+
+        //return "https://source.unsplash.com/random/?$keys&order_by=latest";
+
+
         if (empty($this->media)) {
             return null;
         }
@@ -111,7 +116,9 @@ class News extends Model implements Feedable
      */
     public function setTitleAttribute(string $title): void
     {
-        $this->attributes['title'] = trim(htmlspecialchars_decode($title));
+        $title = htmlspecialchars_decode($title);
+
+        $this->attributes['title'] = Str::of($title)->stripTags()->trim();
     }
 
     /**
@@ -119,7 +126,9 @@ class News extends Model implements Feedable
      */
     public function setDescriptionAttribute(?string $description): void
     {
-        $this->attributes['description'] = trim(strip_tags($description));
+        $description = htmlspecialchars_decode($description);
+
+        $this->attributes['description'] = Str::of($description)->stripTags()->trim();
     }
 
     /**
@@ -145,12 +154,12 @@ class News extends Model implements Feedable
     {
         $description = Str::before(strip_tags($this->description ?? $this->title), '.');
 
-        return (new Stringable($description))
+        return (new Stringable($this->description .'.'. $this->title))
             ->explode(' ')
             ->map(static function (string $word) {
-                $word = str_replace(['(', ')', '"', "'", '$', '«'], '', $word);
+                $word = str_replace(['(', ')', '"', "'", '$', '«', ',', '.'], '', $word);
 
-                if (is_numeric($word) || mb_strlen($word) < 3) {
+                if (is_numeric($word) || mb_strlen($word) < 4) {
                     return null;
                 }
 
@@ -159,13 +168,13 @@ class News extends Model implements Feedable
                     : null;
             })
             ->filter()
-            ->skip(1)
+            //->skip(1)
             ->whenEmpty(function () use ($description) {
-                $rake = RakePlus::create($description, 'ru_RU', 3);
+                $rake = RakePlus::create($description, 'ru_RU', 4);
 
                 $scores = $rake->sortByScore('desc')->scores();
 
-                return collect($scores)->take(3)->keys();
+                return collect($scores)->keys();
             })
             ->toArray();
     }

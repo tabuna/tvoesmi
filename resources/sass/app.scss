@@ -15,7 +15,7 @@
 }
 
 .img-full{
-    min-height: 200px;
+    min-height: 150px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -145,4 +145,8 @@ svg{
 
 .badge.bg-secondary {
     background-color: #c7cacd !important;
+}
+
+*:focus {
+    outline: 0 !important;
 }

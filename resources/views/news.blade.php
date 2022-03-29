@@ -9,7 +9,7 @@
 
 
     <div class="row">
-        <div class="col-md-9 col-sm-12 news-ended">
+        <div class="col-md-8 col-sm-12 news-ended">
             <x-story :story="$story" single="true"/>
 
             @foreach($stories as $story)
