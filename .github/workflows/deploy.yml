@@ -62,10 +62,10 @@ jobs:
           name: Logs
           path: storage/logs/
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          SINGLE_COMMIT: true
-          CLEAN: true
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: master
-          FOLDER: public
+          single_commit: true
+          clean: true
+          access_token: ${{ secrets.ACCESS_TOKEN }}
+          branch: master
+          folder: public
