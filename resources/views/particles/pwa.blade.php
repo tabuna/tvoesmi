@@ -18,3 +18,5 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="application-name" content="{{ config('app.name') }}">
 <meta name="apple-mobile-web-app-title" content="{{ config('app.name') }}">
+<link rel="icon" type="image/png" sizes="196x196" href="pwa/icons/favicon-196.png">
+<link rel="apple-touch-icon" href="pwa/icons/apple-icon-180.png">
