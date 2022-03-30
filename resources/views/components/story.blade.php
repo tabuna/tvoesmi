@@ -7,14 +7,16 @@
 
                     @empty(!$image)
                         <div class="col-12 col-auto"> <!-- col-md-5 -->
-                            <img
-                                src="{{ $image }}"
-                                class="img-full rounded border bg-secondary bg-gradient-secondary mb-2"
-                                onerror="this.style.display='none';"
-                                onload="this.style.display='block';"
-                                alt="{{$title}}"
-                                style="display: none;"
-                            >
+                            <a href="{{ $link }}" target="_blank" class="d-block">
+                                <img
+                                    src="{{ $image }}"
+                                    class="img-full rounded border bg-secondary bg-gradient-secondary mb-2"
+                                    onerror="this.style.display='none';"
+                                    onload="this.style.display='block';"
+                                    alt="{{$title}}"
+                                    style="display: none;"
+                                >
+                            </a>
                         </div>
                     @endempty
 

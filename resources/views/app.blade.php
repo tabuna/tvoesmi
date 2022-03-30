@@ -22,21 +22,13 @@
     <meta property="og:url" content="{{ url()->current() }}">
     {{-- /Open Graph --}}
 
-    {{-- favicon --}}
-    <link rel="icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#83c600">
-    <meta name="msapplication-TileColor" content="#83c600">
-    <meta name="theme-color" content="#ffffff">
-    {{-- /favicon --}}
+
 
     <meta property="fb:pages" content="107147134858113" />
     <meta name="yandex-verification" content="0e693be926f4cc9c" />
 
     @include('feed::links')
+    @include('particles.pwa')
 
     <meta name="generated" content="{{ config('smi.generated') }}">
     <meta name="turbolinks-root" content="/">
