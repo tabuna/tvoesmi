@@ -64,8 +64,8 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          single_commit: true
+          single-commit: true
           clean: true
-          access_token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
           branch: master
           folder: public
