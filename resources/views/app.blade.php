@@ -23,9 +23,8 @@
     {{-- /Open Graph --}}
 
 
-
-    <meta property="fb:pages" content="107147134858113" />
-    <meta name="yandex-verification" content="0e693be926f4cc9c" />
+    <meta property="fb:pages" content="107147134858113"/>
+    <meta name="yandex-verification" content="0e693be926f4cc9c"/>
 
     @include('feed::links')
     @include('particles.pwa')
@@ -52,12 +51,35 @@
             <x-exchange/>
         </div>
 
-        <div class="news-ended" data-target="main.content">
-                <x-tags/>
+        <div class="news-ended">
+            <x-tags/>
 
-                @yield('content')
+            <div class="row" data-target="main.content">
+                <div class="col-md-8 col-sm-12 news-ended">
+                    @yield('content')
+                </div>
 
-                @include('particles.footer')
+                <div class="col d-none d-md-block"
+                     data-controller="news"
+                     data-news-render="{{ config('smi.news.renderCount') }}"
+                >
+
+                    <div class="mb-3 mt-2">
+                        <h1 class="h5 text-muted font-weight-bold text-uppercase">Последние новости</h1>
+                    </div>
+
+                    <div class="row row-cols-1" data-target="news.news">
+                        @isset($lastNews)
+                            @foreach($lastNews as $news)
+                                <x-news :news="$news"/>
+                            @endforeach
+                        @endif
+                    </div>
+                </div>
+            </div>
+
+
+            @include('particles.footer')
         </div>
     </main>
 </div>

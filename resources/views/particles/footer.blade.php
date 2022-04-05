@@ -1,12 +1,15 @@
 <footer class="footer mt-auto py-3">
 
     <div class="row">
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-8">
             <div class="text-dark mb-2">
                 <x-logo/>
             </div>
             <p class="text-muted mb-2">
-                Актуальные новости из различных источников.
+                Мы агрегатор новостных сообщений.
+                Каждые пять минут сервис собирает сообщения из различных источников и составляет новостную картину дня.
+                Это происходит автоматически, без какого-либо вмешательства человека.
+                Из сообщений сервис формирует сюжеты, каждый сюжет — это подборка новостей об одном и том же событии.
             </p>
             <p>
                 <small class="border p-2 rounded"> 18+ </small>
@@ -14,6 +17,7 @@
             </p>
         </div>
 
+        {{--
         <div class="col-6 col-md-2">
             <h5>Каналы</h5>
             <ul class="list-unstyled text-small">
@@ -36,8 +40,8 @@
             </div>
 
         @endforeach
+--}}
 
     </div>
-
 
 </footer>

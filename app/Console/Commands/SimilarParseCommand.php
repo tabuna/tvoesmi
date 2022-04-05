@@ -32,7 +32,7 @@ class SimilarParseCommand extends Command
     {
         $percent = config('smi.story.percent', 51);
 
-        return new Similar(function (News $a, News $b) use ($percent) {
+        return new Similar(static function (News $a, News $b) use ($percent) {
 
             // It makes no sense to compare identical strings
             if ($a->title === $b->title) {

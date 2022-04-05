@@ -26,7 +26,7 @@
                 </ul>
                 --}}
 
-                <div class="form-check form-switch d-none">
+                <div class="form-check form-switch d-block d-md-none">
                     <input class="form-check-input" type="checkbox" id="toggleMobileView" data-action="change->main#toggleMobileView">
                     <label class="form-check-label text-white" for="toggleMobileView">Показывать по порядку</label>
                 </div>

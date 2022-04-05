@@ -23,6 +23,7 @@ $index = [
 ];
 
 Route::view('/', 'index', $index)->name('index');
+Route::view('/list', 'list', $index)->name('list');
 Route::view('/group', 'group', $index)->name('group');
 
 

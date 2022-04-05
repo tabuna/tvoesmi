@@ -6,7 +6,6 @@ export default class extends Controller {
     }
 
     toggleMobileView(e) {
-        const method = e.target.checked ? 'add' : 'remove';
-        this.contentTarget.classList[method]('last-news');
+        this.contentTarget.classList.toggle('last-news');
     }
 }
