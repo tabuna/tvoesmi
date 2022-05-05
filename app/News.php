@@ -2,6 +2,7 @@
 
 namespace App;
 
+use AshAllenDesign\FaviconFetcher\Facades\Favicon;
 use Carbon\Carbon;
 use DonatelloZa\RakePlus\RakePlus;
 use Illuminate\Database\Eloquent\Model;
@@ -11,7 +12,6 @@ use Illuminate\Support\Stringable;
 use Spatie\Feed\Feedable;
 use Spatie\Feed\FeedItem;
 use Symfony\Component\Mime\MimeTypes;
-use AshAllenDesign\FaviconFetcher\Facades\Favicon;
 
 class News extends Model implements Feedable
 {
