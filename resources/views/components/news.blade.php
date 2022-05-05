@@ -1,6 +1,6 @@
 <div class="col my-2 pb-3 border-bottom {{ $class }}" data-target="news.item">
     <div class="v-center mb-1">
-        <img src="{{ $favicon }}" class="me-2" alt="{{ $domain }}" loading="lazy" onerror="this.style.display = 'none'">
+        <img src="{{ $favicon }}" class="me-2 favicon" alt="{{ $domain }}" loading="lazy" onerror="this.style.display = 'none'">
         <div>{{ $domain }}</div>
     </div>
     <h5 class="mb-1">

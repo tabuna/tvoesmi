@@ -63,18 +63,17 @@
                      data-controller="news"
                      data-news-render="{{ config('smi.news.renderCount') }}"
                 >
+                    @isset($lastNews)
+                        <div class="mb-3 mt-2">
+                            <h1 class="h5 text-muted font-weight-bold text-uppercase">Последние новости</h1>
+                        </div>
 
-                    <div class="mb-3 mt-2">
-                        <h1 class="h5 text-muted font-weight-bold text-uppercase">Последние новости</h1>
-                    </div>
-
-                    <div class="row row-cols-1" data-target="news.news">
-                        @isset($lastNews)
+                        <div class="row row-cols-1" data-target="news.news">
                             @foreach($lastNews as $news)
                                 <x-news :news="$news"/>
                             @endforeach
-                        @endif
-                    </div>
+                        </div>
+                    @endif
                 </div>
             </div>
 

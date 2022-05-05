@@ -19,7 +19,7 @@
 
                     <div class="card-body">
                         <div class="v-center mb-1">
-                            <img src="{{ $new->favicon }}" class="me-2" alt="{{ $new->domain }}" loading="lazy">
+                            <img src="{{ $new->favicon }}" class="me-2 favicon" alt="{{ $new->domain }}" loading="lazy">
                             <div>{{ $new->domain }}</div>
                         </div>
 
