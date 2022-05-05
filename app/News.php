@@ -71,6 +71,7 @@ class News extends Model implements Feedable
      */
     public function getFaviconAttribute(): string
     {
+        return 'https://www.google.com/s2/favicons?domain=' . $this->domain;
         $url = Str::start($this->domain, 'http://');
 
         return Favicon::fetch($url)->cache(now()->addWeek())->store('favicons')
