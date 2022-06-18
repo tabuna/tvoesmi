@@ -40,7 +40,7 @@
         @include('particles.adsense')
     @endenv
 </head>
-<body data-controller="main" class="pt-md-5 pb-5 pb-md-0">
+<body data-controller="main" class="pb-5 pt-5 pt-md-0 pb-md-0">
 
 @include('particles.navigation')
 
