@@ -68,18 +68,14 @@
 
     <div data-controller="story-items" class="position-relative">
         <div class="row row-cols-1 row-cols-sm-2">
-            @foreach($items->take(2) as $news)
-                <x-news :news="$news"/>
-            @endforeach
-
-            @foreach($items->skip(2) as $news)
+            @foreach($items as $news)
                 <x-news :news="$news" class="d-none"/>
             @endforeach
         </div>
 
-        @if($items->count() > 2)
-            <div class="text-center pb-3 position-absolute bottom-0 start-0 end-0 bg-white opacity-50">
-                <button class="btn w-100" data-action="story-items#show" title="Больше источников" data-target="story-items.showMoreBtn">
+        @if($items->count() > 1)
+            <div class="text-center pb-3 bottom-0 start-0 end-0 bg-white opacity-50">
+                <button class="btn w-100 p-0" data-action="story-items#show" title="Больше источников" data-target="story-items.showMoreBtn">
                     <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-down-short"
                          fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
