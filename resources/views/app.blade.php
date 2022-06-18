@@ -30,7 +30,7 @@
     @include('particles.pwa')
 
     <meta name="generated" content="{{ config('smi.generated') }}">
-    <meta name="turbolinks-root" content="/">
+    <meta name="turbo-root" content="/">
     <meta http-equiv="X-DNS-Prefetch-Control" content="on"/>
     <link rel="dns-prefetch" href="{{ config('app.url') }}"/>
     <script src="{{ mix('/js/app.js')}}" type="text/javascript"></script>
@@ -88,7 +88,7 @@
    <div class="container">
     <div class="row d-flex align-items-center g-0 vw-100 mb-2 px-4">
         <div class="col text-center position-relative">
-            <a href="{{ url('/') }}" class="pt-2 pb-3 d-block {{ request()->routeIs('index') ? 'text-success' : 'text-white' }}">
+            <a href="{{ url('/') }}" class="pt-2 pb-3 d-block text-decoration-none {{ request()->routeIs('index') ? 'text-success' : 'text-white' }}">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="1.7em" height="1.7em" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
                     <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
@@ -99,7 +99,7 @@
             </a>
         </div>
         <div class="col text-center">
-            <a href="{{ url('/list') }}" class="pt-2 pb-3 d-block {{ request()->routeIs('list') ? 'text-success' : 'text-white' }}">
+            <a href="{{ url('/list') }}" class="pt-2 pb-3 d-block  text-decoration-none {{ request()->routeIs('list') ? 'text-success' : 'text-white' }}">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="1.7em" height="1.7em" fill="currentColor" class="bi bi-collection" viewBox="0 0 16 16">
                     <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
