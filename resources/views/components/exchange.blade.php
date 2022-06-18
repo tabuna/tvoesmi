@@ -1,5 +1,5 @@
 @foreach($exchange as $currency)
-    <span class="p-2 text-md-white" title="{{ $currency['name'] }} {{ $format($difference($currency)) }}">
+    <span class="{{ $loop->first ? 'ps-1' : '' }} p-2 text-md-white" title="{{ $currency['name'] }} {{ $format($difference($currency)) }}">
             <span class="text-muted">{{ $currency['charCode'] }}:</span>
 
             {{ $format($currency['value']) }}

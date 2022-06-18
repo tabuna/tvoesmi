@@ -1,4 +1,4 @@
-<nav class="site-header">
+<nav class="site-header d-none d-md-block">
     <div class="px-md-5 bg-dark" style="background: #36393f!important;">
         <div class="container">
             <div class="d-flex flex-md-row justify-content-start align-items-center">
