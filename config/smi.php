@@ -109,6 +109,8 @@ return [
         'https://rss.dw.com/xml/rss-ru-all',
         'https://thebell.io/feed',
         'https://www.golosameriki.com/api/',
+        'https://paperpaper.ru/feed/',
+        'https://www.the-village.ru/api/spaces/2/rss.xml',
 
 /*
         'http://www.aif.ru/rss/news.php',
