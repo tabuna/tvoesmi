@@ -74,23 +74,54 @@ return [
     'rss' => [
         // smi
         'https://www.vedomosti.ru/rss/news',
+        'https://istories.media/rss/all.xml',
+        'https://life.ru/rss',
+        'https://vz.ru/rss.xml',
+        'https://www.ridus.ru/rss/news',
+        'https://www.fontanka.ru/rss.xml',
+        'https://www.kommersant.ru/RSS/news.xml',
+        'https://tvrain.ru/export/rss/all.xml',
+        'https://meduza.io/rss/news',
+        'https://tjournal.ru/rss',
+        'https://zona.media/rss',
+        'https://rtvi.com/rss',
+        'https://takiedela.ru/feed/',
+        'https://paperpaper.ru/feed/',
+        'https://www.yuga.ru/articles.rss',
+        'https://tayga.info/rss',
+        'https://7x7-journal.ru/rss/default.xml',
+        'https://mash.ru/rss',
+        'https://eadaily.com/ru/rss/index.xml',
+        'https://www.vtimes.io/rss',
+        'https://holod.media/feed/',
+        'https://verstka.media/feed/',
+        'https://kedr.media/feed',
+        'https://novayagazeta.eu/feed/rss',
+        'https://vc.ru/rss',
+        'https://www.rosbalt.ru/feed/',
+        'https://republic.ru/export/all.xml',
+        'https://graniru.org/export/all-atom.xml',
+        'https://www.svoboda.org/api/',
+        'https://feeds.bbci.co.uk/russian/rss.xml',
+        'https://ovdinfo.org/rss.xml',
+        'https://navalny.com/blog/post.rss',
+        'https://theins.ru/feed',
+        'https://rss.dw.com/xml/rss-ru-all',
+        'https://thebell.io/feed',
+        'https://www.golosameriki.com/api/',
+
+/*
         'http://www.aif.ru/rss/news.php',
         'http://lenta.ru/rss/',
         'http://www.rian.ru/export/rss2/index.xml',
         'http://russian.rt.com/rss/',
         'https://www.gazeta.ru/export/rss/lenta.xml',
         'http://www.aif.ru/rss/news.php',
-        'http://www.kommersant.ru/RSS/news.xml',
         'http://vz.ru/rss.xml',
         'http://www.vedomosti.ru/newsline/out/rss.xml',
         'http://tass.ru/rss/v2.xml?sections=MjU%3D',
         'http://www.vesti.ru/vesti.rss',
         'https://www.mk.ru/rss/news/index.xml',
-        'https://tvrain.ru/export/rss/all.xml',
-        'https://meduza.io/rss/news',
-        'https://tjournal.ru/rss',
-        'https://zona.media/rss',
-        'https://rtvi.com/rss',
         'https://dailystorm.ru/media/rss.xml',
         'https://360tv.ru/rss/',
         'https://www.interfax.ru/rss.asp',
@@ -101,13 +132,9 @@ return [
         'https://regnum.ru/rss/russian/',
         'https://rg.ru/xml/index.xml',
         'https://www.ng.ru/rss/',
-        'https://www.rosbalt.ru/feed/',
+
         'https://rtvi.com/rss/',
-        'https://life.ru/rss',
-        'https://vz.ru/rss.xml',
-        'https://www.ridus.ru/rss/news',
-        'https://istories.media/rss/all.xml',
-        'https://www.fontanka.ru/rss.xml',
+
         'https://regnum.ru/rss/news.html',
         'https://live24.ru/rss.xml',
         'https://takiedela.ru/feed/',
@@ -119,6 +146,7 @@ return [
         'https://ria.ru/export/rss2/archive/index.xml',
         'https://eadaily.com/ru/rss/index.xml',
         'https://www.vtimes.io/rss',
+*/
 
         // foreign
         'https://gordonua.com/xml/rss_category/top.html',
@@ -132,7 +160,6 @@ return [
 
 
         'https://rss.unian.net/site/news_rus.rss?',
-
     ],
 
     /*
