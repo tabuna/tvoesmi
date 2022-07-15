@@ -55,11 +55,11 @@
                 <ul class="nav nav-pills nav-justified">
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('index') ? 'active' : '' }}" aria-current="page"
-                           href="{{ url('/') }}">Важное сегодня</a>
+                           href="{{ url('/') }}" data-turbo-action="replace">Важное сегодня</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ !request()->routeIs('index') ? 'active' : '' }}" aria-current="page"
-                           href="{{ url('/list') }}">Прямо сейчас</a>
+                           href="{{ url('/list') }}" data-turbo-action="replace">Прямо сейчас</a>
                     </li>
                 </ul>
             </div>
