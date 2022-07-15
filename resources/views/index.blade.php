@@ -1,5 +1,7 @@
 @extends('app')
 
+@section('title', 'Важное сегодня')
+
 @section('content')
 
     @foreach($stories as $story)

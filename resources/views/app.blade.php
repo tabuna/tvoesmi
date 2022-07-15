@@ -10,7 +10,9 @@
           content="@yield('description','Самые горячие новости в России, в США, в мире. Последние события в мире новостей.')">
     <meta name="keywords"
           content="@yield('keywords','Новости, вести, события, последние, горячее, в мире, в России, в США.')">
-    <link rel="stylesheet" type="text/css" href="{{mix('/css/app.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{mix('/css/light.css')}}" media="(prefers-color-scheme: light)" lazyload>
+    <link rel="stylesheet" type="text/css" href="{{mix('/css/dark.css')}}" media="(prefers-color-scheme: dark)" lazyload>
 
     {{-- Open Graph --}}
     <meta property="og:title"
@@ -40,19 +42,47 @@
         @include('particles.adsense')
     @endenv
 </head>
-<body data-controller="main" class="pb-5 pt-5 pt-md-0 pb-md-0">
+
+<body data-controller="main">
 
 @include('particles.navigation')
+
+
+<div class="d-md-none sticky-top">
+    <div class="container">
+        <div class="card">
+            <div class="card-body p-2 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('index') ? 'active' : '' }}" aria-current="page"
+                           href="{{ url('/') }}">Важное сегодня</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ !request()->routeIs('index') ? 'active' : '' }}" aria-current="page"
+                           href="{{ url('/list') }}">Прямо сейчас</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="container" data-controller="redirect" data-redirect-url="@yield('redirect')">
 
     <main id="app" class="py-md-4 py-3">
-        <div class="d-md-none py-1">
-            <x-exchange/>
+
+        <div class="{{ request()->routeIs('index') ? 'd-md-none' : 'd-none' }} card mb-3">
+            <div class="card-body p-2 text-center">
+                <x-exchange/>
+            </div>
         </div>
 
         <div class="news-ended">
-            <x-tags/>
+
+            <div class="{{ request()->routeIs('index') ? 'd-none d-md-block' : ''}}">
+                <x-tags/>
+            </div>
 
             <div class="row" data-target="main.content">
                 <div class="col-md-8 col-sm-12 news-ended">
@@ -84,7 +114,8 @@
 </div>
 
 
-<nav class="navbar fixed-bottom mobile-menu p-0 d-block d-xxl-none overflow-hidden min-vw-100 vw-100 border-end-0 d-block d-md-none" style="background: #36393f!important;">
+{{--
+<nav class="navbar fixed-bottom mobile-menu p-0 d-block d-xxl-none overflow-hidden min-vw-100 vw-100 border-end-0 d-block d-md-none bg-dark">
    <div class="container">
     <div class="row d-flex align-items-center g-0 vw-100 mb-2 px-4">
         <div class="col text-center position-relative">
@@ -111,6 +142,7 @@
     </div>
    </div>
 </nav>
+--}}
 
 <script id="news-template" type="text/template">
     @includeVerbatim('components.news')

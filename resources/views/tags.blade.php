@@ -6,7 +6,7 @@
     <div class="row">
         <div class="card-columns">
             @foreach($news as $new)
-                <div class="card mb-4 rounded shadow-sm">
+                <div class="card mb-4 rounded ">
                     @if($new->image)
                         <a href="{{ $new->link }}" target="_blank" rel="noopener">
                             <img src="{{ $new->image }}" class="card-img-top img-full"

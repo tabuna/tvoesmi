@@ -1,4 +1,4 @@
-<article class="bg-white pt-3 px-3 mb-4 rounded shadow-sm">
+<article class="bg-white pt-3 px-3 mb-4 rounded ">
 
     <div class="row">
         <div class="col d-flex flex-column">

@@ -3,7 +3,7 @@
 @section('content')
 
 
-    <div class="bg-white p-4 mb-4 rounded shadow-sm">
+    <div class="bg-white p-4 mb-4 rounded ">
         <div class="row g-md-5 d-flex justify-content-center align-items-center h-100">
             <div class="col-sm-8">
                 <!-- post -->
@@ -76,7 +76,7 @@
     </div>
 
 
-    <div class="bg-white p-2 mb-4 rounded shadow-sm">
+    <div class="bg-white p-2 mb-4 rounded ">
         <div class="rounded bordered bg-light p-3">
             <div class="row row-cols-1 row-cols-md-3 g-5">
                 @foreach($stories->slice(6, 3) as $story)
@@ -109,7 +109,7 @@
         @foreach($stories->slice(9, 2) as $story)
             <div class="col mb-4">
                 <div
-                    class="row g-0 bg-white rounded mb-4 shadow-sm h-100 position-relative">
+                    class="row g-0 bg-white rounded mb-4  h-100 position-relative">
 
                     @if($story['main']->image !== null)
                         <div class="col-auto d-none d-lg-block">
@@ -151,7 +151,7 @@
 
     <!-- dublicate -->
 
-    <div class="bg-white p-4 mb-4 rounded shadow-sm">
+    <div class="bg-white p-4 mb-4 rounded ">
         <div class="row g-md-5 d-flex justify-content-center align-items-center h-100">
             <div class="col-sm-8">
                 <!-- post -->
@@ -224,7 +224,7 @@
     </div>
 
 
-    <div class="bg-white p-2 mb-4 rounded shadow-sm">
+    <div class="bg-white p-2 mb-4 rounded ">
         <div class="rounded bordered bg-light p-3">
             <div class="row row-cols-1 row-cols-md-3 g-5">
                 @foreach($stories->slice(16, 3) as $story)
@@ -257,7 +257,7 @@
         @foreach($stories->slice(19, 2) as $story)
             <div class="col mb-4">
                 <div
-                    class="row g-0 bg-white rounded mb-4 shadow-sm h-100">
+                    class="row g-0 bg-white rounded mb-4  h-100">
 
                     @if($story['main']->image !== null)
                         <div class="col-auto d-none d-lg-block">
@@ -296,7 +296,7 @@
         @endforeach
     </div>
 
-    <div class="bg-white p-2 mb-4 rounded shadow-sm">
+    <div class="bg-white p-2 mb-4 rounded ">
         <div class="rounded bordered bg-light p-3">
             <div class="row row-cols-1 row-cols-md-3 g-5">
                 @foreach($stories->slice(21, 3) as $story)
@@ -333,7 +333,7 @@
         @foreach($stories->slice(24, 4) as $story)
             <div class="col mb-4">
                 <div
-                    class="row g-0 bg-white rounded overflow-hidden flex-md-row mb-4 shadow-sm h-100 position-relative">
+                    class="row g-0 bg-white rounded overflow-hidden flex-md-row mb-4  h-100 position-relative">
 
                     {{--
                     <div class="col-12 d-none d-lg-block">
