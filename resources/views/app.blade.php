@@ -48,7 +48,7 @@
 @include('particles.navigation')
 
 
-<div class="d-md-none sticky-top">
+<div class="d-md-none sticky-top mt-2 bg-color">
     <div class="container">
         <div class="card">
             <div class="card-body p-2 text-center">

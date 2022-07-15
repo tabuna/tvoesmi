@@ -10372,3 +10372,33 @@ svg {
   height: 1em;
   width: 1em;
 }
+
+/*
+.nav.nav-pills {
+    .nav-link:first-child {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        &:not(.active) {
+            @extend .border-end;
+        }
+    }
+
+    .nav-link:last-child {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        &:not(.active) {
+            @extend .border-start;
+        }
+    }
+
+    .nav-link {
+        &:not(.active) {
+            @extend .border-top;
+            @extend .border-bottom;
+        }
+    }
+}
+*/
+.bg-color {
+  background: linear-gradient(rgba(54, 57, 63, 0.8117647059), rgba(255, 255, 255, 0));
+}

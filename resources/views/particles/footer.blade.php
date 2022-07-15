@@ -1,11 +1,10 @@
-<footer class="footer mt-auto py-3">
-
-    <div class="row">
-        <div class="col-12 col-md-8">
+<footer class="footer mt-auto m-3">
+            {{--
             <div class="text-dark mb-2">
                 <x-logo/>
             </div>
-            <p class="text-muted mb-2">
+            --}}
+            <p class="text-muted">
                 Мы агрегатор новостных сообщений.
                 Каждые пять минут сервис собирает сообщения из различных источников и составляет новостную картину дня.
                 Это происходит автоматически, без какого-либо вмешательства человека.
@@ -15,7 +14,7 @@
                 <small class="border p-2 rounded"> 18+ </small>
                 <small class="m-2 mb-2 text-muted">&copy; 2017-{{ date('Y') }}</small>
             </p>
-        </div>
+
 
         {{--
         <div class="col-6 col-md-2">
