@@ -111,6 +111,8 @@ return [
         'https://www.golosameriki.com/api/',
         'https://paperpaper.ru/feed/',
         'https://www.the-village.ru/api/spaces/2/rss.xml',
+        'https://roskomsvoboda.org/feed/',
+        'https://ura.news/rss',
 
 /*
         'http://www.aif.ru/rss/news.php',
