@@ -22,7 +22,23 @@ $index = [
     //'tags'     => Source::getMostTags(),
 ];
 
+
+//dd(Source::getSimilarNews());
+
 Route::view('/', 'index', $index)->name('index');
+Route::get('/sources/{id}', function (string $id){
+    $group = Source::getSimilarNews()->mapWithKeys(function($items, $key){
+        return [sha1($key) => $items];
+    })->get($id);
+
+   abort_if(empty($group), 404);
+
+    return view('sources', $group->all());
+})->name('sources');
+
+
+
+
 Route::view('/list', 'list', $index)->name('list');
 Route::view('/group', 'group', $index)->name('group');
 Route::view('/policy', 'policy')->name('policy');

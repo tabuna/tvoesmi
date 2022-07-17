@@ -2,7 +2,7 @@
 
     @empty(!$image)
         <div class="col-12 col-auto"> <!-- col-md-5 -->
-            <a href="{{ $link }}" target="_blank" class="d-block">
+            <a href="{{ route('sources', sha1($link)) }}" target="_blank" class="d-block">
                 <img
                     src="{{ $image }}"
                     class="card-img-top img-full"
@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col d-flex flex-column">
                         <h2 class="text-dark font-weight-bolder">
-                            <a href="{{ $link }}" target="_blank">{{$title}}</a>
+                            <a href="{{ route('sources', sha1($link)) }}" target="_blank">{{$title}}</a>
                         </h2>
 
                         <div class="d-flex align-items-center mb-2">
@@ -56,37 +56,43 @@
             </div>
         </div>
 
+
+
         @if($single)
             <p>
                 {!! Str::of($description)->words(25) !!}
             </p>
         @endif
+        {{--
+         @if($items->isNotEmpty())
+             <hr>
+         @endif
 
-        @if($items->isNotEmpty())
-            <hr>
-        @endif
+         <div data-controller="story-items" class="position-relative">
+             <div class="row row-cols-1 row-cols-sm-2">
+                 @foreach($items as $news)
+                     <x-news :news="$news" class="d-none"/>
+                 @endforeach
+             </div>
 
-        <div data-controller="story-items" class="position-relative">
-            <div class="row row-cols-1 row-cols-sm-2">
-                @foreach($items as $news)
-                    <x-news :news="$news" class="d-none"/>
-                @endforeach
-            </div>
+             @if($items->count() > 1)
+                 <div class="text-center pb-3 bottom-0 start-0 end-0 bg-white opacity-50">
+                     <button class="btn w-100 p-0" data-action="story-items#show" title="Больше источников"
+                             data-target="story-items.showMoreBtn">
+                         <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-down-short"
+                              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                             <path fill-rule="evenodd"
+                                   d="M4.646 7.646a.5.5 0 0 1 .708 0L8 10.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z"/>
+                             <path fill-rule="evenodd"
+                                   d="M8 4.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"/>
+                         </svg>
+                     </button>
+                 </div>
+             @endif
+         </div>
 
-            @if($items->count() > 1)
-                <div class="text-center pb-3 bottom-0 start-0 end-0 bg-white opacity-50">
-                    <button class="btn w-100 p-0" data-action="story-items#show" title="Больше источников"
-                            data-target="story-items.showMoreBtn">
-                        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-down-short"
-                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                  d="M4.646 7.646a.5.5 0 0 1 .708 0L8 10.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z"/>
-                            <path fill-rule="evenodd"
-                                  d="M8 4.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"/>
-                        </svg>
-                    </button>
-                </div>
-            @endif
-        </div>
+         --}}
     </div>
+
+    <a href="{{ route('sources', sha1($link)) }}" class="stretched-link"></a>
 </article>
