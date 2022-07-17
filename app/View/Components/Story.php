@@ -63,13 +63,19 @@ class Story extends Component
     public $single;
 
     /**
+     * @var string
+     */
+    public $key;
+
+    /**
      * Create a new component instance.
      *
      * @param Collection $story
      * @param bool       $single
      */
-    public function __construct(Collection $story, bool $single = false)
+    public function __construct(Collection $story, string $key, bool $single = false)
     {
+        $this->key = $key;
         $main = $story->get('main');
         $this->single = $single;
 

@@ -98,7 +98,7 @@ class SimilarParseCommand extends Command
             ->map(function (Collection $group) {
                 return $this->groupNews($group);
             })
-            ->toJson();
+            ->toJson(JSON_UNESCAPED_UNICODE);
 
 
         Storage::put('/api/similar-news.json', $data);

@@ -4,8 +4,8 @@
 
 @section('content')
 
-    @foreach($stories as $story)
-        <x-story :story="$story" single="true"/>
+    @foreach($stories as $key => $story)
+        <x-story :story="$story" :key="$key" single="true"/>
     @endforeach
 
 @endsection

@@ -54,7 +54,7 @@ class DownloadRssCommand extends Command
                 return $news;
             });
 
-        Storage::put('/api/last-news.json', $news->toJson());
+        Storage::put('/api/last-news.json', $news->toJson(JSON_UNESCAPED_UNICODE));
 
         $this->info('Latest News Received. Count:'. $news->count());
     }
