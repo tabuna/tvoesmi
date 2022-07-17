@@ -112,8 +112,7 @@ class BuildPageCommand extends Command
      */
     public function generatedSourcePages(): BuildPageCommand
     {
-        Source::getSimilarNews()->each(function($items, $key){
-
+        Source::getSimilarNews()->each(function ($items, $key) {
             $uri = route('sources', sha1($key));
 
             $response = $this->createRequest($uri);
@@ -121,7 +120,6 @@ class BuildPageCommand extends Command
             $page = parse_url($uri, PHP_URL_PATH) . '.html';
 
             Storage::put($page, (string)$response->getContent());
-
         });
 
         $this->info('Sources pages generated');
