@@ -40,6 +40,7 @@ class BuildPageCommand extends Command
         $this->generatedNewsPages()
             ->generatedStaticPage()
             ->generatedApi()
+            ->generatedSourcePages()
             ->generatedTagsPages();
     }
 
@@ -102,6 +103,28 @@ class BuildPageCommand extends Command
         });
 
         $this->info('News pages generated');
+
+        return $this;
+    }
+
+    /**
+     * @return BuildPageCommand
+     */
+    public function generatedSourcePages(): BuildPageCommand
+    {
+        Source::getSimilarNews()->each(function($items, $key){
+
+            $uri = route('sources', sha1($key));
+
+            $response = $this->createRequest($uri);
+
+            $page = parse_url($uri, PHP_URL_PATH) . '.html';
+
+            Storage::put($page, (string)$response->getContent());
+
+        });
+
+        $this->info('Sources pages generated');
 
         return $this;
     }
