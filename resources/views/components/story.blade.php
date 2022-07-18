@@ -2,7 +2,7 @@
 
     @empty(!$image)
         <div class="col-12 col-auto"> <!-- col-md-5 -->
-            <a href="{{ route('sources', md5($key)) }}" target="_blank" class="d-block">
+            <a href="{{ route('sources', md5($key)) }}" class="d-block"  data-turbo-action="replace">
                 <img
                     src="{{ $image }}"
                     class="card-img-top img-full"
@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col d-flex flex-column">
                         <h2 class="text-dark font-weight-bolder">
-                            <a href="{{ route('sources', md5($key)) }}" target="_blank">{{$title}}</a>
+                            <a href="{{ route('sources', md5($key)) }}"  data-turbo-action="replace">{{$title}}</a>
                         </h2>
 
                         <div class="d-flex align-items-center mb-2">
@@ -94,5 +94,5 @@
          --}}
     </div>
 
-    <a href="{{ route('sources', md5($key)) }}" class="stretched-link"></a>
+    <a href="{{ route('sources', md5($key)) }}" data-turbo-action="replace" class="stretched-link"></a>
 </article>
