@@ -34,8 +34,6 @@
     @include('particles.pwa')
 
     <meta name="generated" content="{{ config('smi.generated') }}">
-    <meta name="turbo-root" content="/">
-    <meta http-equiv="X-DNS-Prefetch-Control" content="on"/>
     <link rel="dns-prefetch" href="{{ config('app.url') }}"/>
     <script src="{{ mix('/js/app.js')}}" type="text/javascript"></script>
 
