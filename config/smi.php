@@ -113,6 +113,7 @@ return [
         'https://www.the-village.ru/api/spaces/2/rss.xml',
         'https://roskomsvoboda.org/feed/',
         'https://ura.news/rss',
+        'https://cherta.media/feed/',
 
 /*
         'http://www.aif.ru/rss/news.php',
