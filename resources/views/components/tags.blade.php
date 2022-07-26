@@ -1,11 +1,20 @@
 <nav class="row mb-3">
     <div class="col-12">
         @foreach(config('smi.tags') as $tag)
-            <a href="/tags/{{ $tag['slug'] }}"
-               data-turbo-action="replace"
-               class="badge {{ \Illuminate\Support\Str::endsWith(url()->current(), $tag['slug'])  ? 'bg-success' : 'bg-secondary' }} border">
-                {{ $tag['name'] }}
-            </a>
+
+            @if(\Illuminate\Support\Str::endsWith(url()->current(), $tag['slug']))
+                <a href="/list"
+                   data-turbo-action="replace"
+                   class="badge bg-success border">
+                    {{ $tag['name'] }}
+                </a>
+            @else
+                <a href="/tags/{{ $tag['slug'] }}"
+                   data-turbo-action="replace"
+                   class="badge bg-secondary border">
+                    {{ $tag['name'] }}
+                </a>
+            @endif
         @endforeach
     </div>
 </nav>

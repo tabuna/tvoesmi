@@ -48,7 +48,7 @@ class News extends Component
      * @param bool        $direct
      * @param string|null $class
      */
-    public function __construct(\App\News $news, bool $direct = false, string $class = null)
+    public function __construct(\App\News $news, bool $direct = true, string $class = null)
     {
         $this->title = $news->title;
         $this->domain = $news->domain;

@@ -7,9 +7,7 @@
                     src="{{ $image }}"
                     class="card-img-top img-full"
                     onerror="this.style.display='none';"
-                    onload="this.style.display='block';"
                     alt="{{$title}}"
-                    style="display: none;"
                 >
             </a>
         </div>
