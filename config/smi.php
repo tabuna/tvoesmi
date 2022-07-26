@@ -36,7 +36,7 @@ return [
     */
 
     'story'  => [
-        'percent'  => 75,
+        'percent'  => 70,
         'minCount' => 3,
 
         // Time difference when groups cannot be combined at all
