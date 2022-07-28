@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
             return "<?php echo file_get_contents(\\view($patch)->getPath()); ?>";
         });
 
-        if($this->app->environment('production')) {
+        if ($this->app->environment('production')) {
             \URL::forceScheme('https');
         }
     }
