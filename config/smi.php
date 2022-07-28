@@ -75,6 +75,7 @@ return [
         // smi
         'https://www.vedomosti.ru/rss/news',
         'https://istories.media/rss/all.xml',
+            /*
         'https://life.ru/rss',
         'https://vz.ru/rss.xml',
         'https://www.ridus.ru/rss/news',
@@ -114,7 +115,7 @@ return [
         'https://roskomsvoboda.org/feed/',
         'https://ura.news/rss',
         'https://cherta.media/feed/',
-
+*/
 /*
         'http://www.aif.ru/rss/news.php',
         'http://lenta.ru/rss/',
