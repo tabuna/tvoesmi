@@ -11,7 +11,7 @@
                 <ul class="nav nav-pills nav-justified">
                     <li class="nav-item">
                         <a class="nav-link {{ request()->routeIs('index') ? 'active' : '' }}"
-                           href="{{ App\Link::to('/') }}" data-turbo-action="replace">Важное сегодня</a>
+                           href="/" data-turbo-action="replace">Важное сегодня</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ !request()->routeIs('index') ? 'active' : '' }}"
