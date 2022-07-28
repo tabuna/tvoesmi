@@ -27,5 +27,9 @@ class AppServiceProvider extends ServiceProvider
         Blade::directive('includeVerbatim', function (string $patch) {
             return "<?php echo file_get_contents(\\view($patch)->getPath()); ?>";
         });
+
+        if($this->app->environment('production')) {
+            \URL::forceScheme('https');
+        }
     }
 }
