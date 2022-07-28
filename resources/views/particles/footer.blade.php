@@ -1,4 +1,4 @@
-<footer class="footer mt-auto m-3">
+<footer class="footer mt-auto m-1">
             {{--
             <div class="text-dark mb-2">
                 <x-logo/>

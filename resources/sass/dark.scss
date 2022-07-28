@@ -1,17 +1,25 @@
 // Body
-$body-bg: #36393fcf; //#f2f2f2;//#f8f9fa;
+$body-bg: #000000;//#202125;//#36393fcf; //#f2f2f2;//#f8f9fa;
 
 // Colors
-$primary: #353a40; //#82c502;
-$card-bg: #353a40;
-$white: #353a40;
+$primary: #1c1c1e;//#353a40; //#82c502;
+$card-bg: #1c1c1e;//#353a40;
+$white: #1c1c1e;//#353a40;
 
 
 $secondary: #f1f1f1; //#adb5bd;
 $green: #82c504;
 
 $border-color: #dee2e60f;
-$body-color: #f3f3f2;
-$link-color: #f3f3f2;
+$body-color: #bdc1c6;//#e8eaed;#
+$link-color: #e8eaed;
+$dark: #1c1c1e;
+
+$nav-pills-link-active-color: #e8eaed;
+$nav-pills-link-active-bg: #2e2e2e;
+$nav-pills-link-active-border-color: #2e2e2e;
+
+
+//#2e2e2e
 
 @import 'app.scss';
