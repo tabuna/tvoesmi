@@ -10,10 +10,8 @@
     <meta name="keywords"
           content="@yield('keywords','Новости, вести, события, последние, горячее, в мире, в России, в США.')">
 
-    <link rel="stylesheet" type="text/css" href="{{mix('/css/light.css')}}" media="(prefers-color-scheme: light)"
-          lazyload>
-    <link rel="stylesheet" type="text/css" href="{{mix('/css/dark.css')}}" media="(prefers-color-scheme: dark)"
-          lazyload>
+    <link rel="stylesheet" type="text/css" href="{{mix('/css/light.css')}}" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" type="text/css" href="{{mix('/css/dark.css')}}" media="(prefers-color-scheme: dark)">
 
     {{-- Open Graph --}}
     <meta property="og:title"
@@ -33,13 +31,14 @@
     @include('particles.pwa')
 
     <meta name="generated" content="{{ config('smi.generated') }}">
-    <link rel="dns-prefetch" href="{{ config('app.url') }}"/>
     <script src="{{ mix('/js/app.js')}}" type="text/javascript"></script>
 
+    {{--
     @env('production')
         @include('particles.analytics')
         @include('particles.adsense')
     @endenv
+     --}}
 </head>
 
 <body data-controller="main">
