@@ -2,6 +2,8 @@
 
 namespace App;
 
+use Illuminate\Support\Str;
+
 class Link
 {
     /**
@@ -12,7 +14,7 @@ class Link
     public static function to(string $url)
     {
         if (config('app.env') === 'production') {
-            return url($url.'.html');
+            return Str::of(url($url.'.html'))->replaceFirst(config('app.url'), '');
         }
 
         return url($url);
@@ -28,7 +30,7 @@ class Link
     public static function route($name, $parameters = [], $absolute = true)
     {
         if (config('app.env') === 'production') {
-            return route($name, $parameters, $absolute).'.html';
+            return Str::of(route($name, $parameters, $absolute).'.html')->replaceFirst(config('app.url'), '');
         }
 
         return route($name, $parameters, $absolute);
