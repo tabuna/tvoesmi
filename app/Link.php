@@ -9,9 +9,9 @@ class Link
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\Routing\UrlGenerator|string
      */
-    static function to(string $url)
+    public static function to(string $url)
     {
-        if(config('app.env') === 'production') {
+        if (config('app.env') === 'production') {
             return url($url.'.html');
         }
 
@@ -25,13 +25,12 @@ class Link
      *
      * @return string
      */
-    static function route($name, $parameters = [], $absolute = true){
-
-        if(config('app.env') === 'production') {
+    public static function route($name, $parameters = [], $absolute = true)
+    {
+        if (config('app.env') === 'production') {
             return route($name, $parameters, $absolute).'.html';
         }
 
         return route($name, $parameters, $absolute);
     }
-
 }
