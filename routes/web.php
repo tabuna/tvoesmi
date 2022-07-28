@@ -26,12 +26,10 @@ $index = [
 //dd(Source::getSimilarNews());
 
 Route::view('/', 'index', $index)->name('index');
-
-
-Route::get('/sources', function (\Illuminate\Http\Request $request){
+Route::get('/sources/{id}', function (string $id){
     $group = Source::getSimilarNews()->mapWithKeys(function($items, $key){
         return [md5($key) => $items];
-    })->get($request->get('id'));
+    })->get($id);
 
    abort_if(empty($group), 404);
 

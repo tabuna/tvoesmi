@@ -116,7 +116,7 @@ class BuildPageCommand extends Command
     public function generatedSourcePages(): BuildPageCommand
     {
         Source::getSimilarNews()->each(function ($items, $key) {
-            $uri = route('sources', ['id' => md5($key)]);
+            $uri = route('sources', md5($key));
 
             $response = $this->createRequest($uri);
 
