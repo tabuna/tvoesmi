@@ -3,12 +3,14 @@
     @empty(!$image)
         <div class="col-12 col-auto"> <!-- col-md-5 -->
             <a href="{{ App\Link::route('sources', md5($key)) }}" class="d-block"  data-turbo-action="replace">
+                {{--
                 <img
                     src="{{ $image }}"
                     class="card-img-top img-full"
                     onerror="this.style.display='none';"
                     alt="{{$title}}"
                 >
+                --}}
             </a>
         </div>
     @endempty

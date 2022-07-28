@@ -78,11 +78,12 @@ return [
         'https://life.ru/rss',
         'https://vz.ru/rss.xml',
         'https://www.ridus.ru/rss/news',
-        'https://www.fontanka.ru/rss.xml',
-        'https://www.kommersant.ru/RSS/news.xml',
-        'https://tvrain.ru/export/rss/all.xml',
-        'https://meduza.io/rss/news',
         /*
+'https://www.fontanka.ru/rss.xml',
+'https://www.kommersant.ru/RSS/news.xml',
+'https://tvrain.ru/export/rss/all.xml',
+'https://meduza.io/rss/news',
+
 'https://tjournal.ru/rss',
 'https://zona.media/rss',
 'https://rtvi.com/rss',
