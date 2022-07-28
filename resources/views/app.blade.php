@@ -15,7 +15,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ !request()->routeIs('index') ? 'active' : '' }}"
-                           href="{{ url('/list') }}" data-turbo-action="replace">Прямо сейчас</a>
+                           href="{{ url('/list') }}">Прямо сейчас</a>
                     </li>
                 </ul>
             </div>
