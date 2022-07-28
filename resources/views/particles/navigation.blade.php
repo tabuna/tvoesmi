@@ -2,7 +2,7 @@
     <div class="px-md-5 bg-dark">
         <div class="container">
             <div class="d-flex flex-md-row justify-content-start align-items-center">
-                <a href="{{url('/')}}" data-turbo-action="replace" class="text-white me-auto" title="Твоё СМИ - Новостной агрегатор.">
+                <a href="{{ App\Link::to(('/') }}" data-turbo-action="replace" class="text-white me-auto" title="Твоё СМИ - Новостной агрегатор.">
                     <x-logo/>
                 </a>
 

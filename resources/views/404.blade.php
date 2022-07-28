@@ -14,7 +14,7 @@
             Sorry, an error has occured, Requested page not found!
         </div>
         <div>
-            <a href="{{route('index')}}" data-turbo-action="replace" class="btn btn-link btn-lg">
+            <a href="{{ App\Link::route('index')}}" data-turbo-action="replace" class="btn btn-link btn-lg">
                 На главную
             </a>
         </div>
