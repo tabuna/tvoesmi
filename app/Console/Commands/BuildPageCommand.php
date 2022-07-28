@@ -92,6 +92,7 @@ class BuildPageCommand extends Command
      */
     public function generatedNewsPages(): BuildPageCommand
     {
+        /*
         Source::getLastNews()->each(function (News $news) {
             $uri = route('news', $news->id);
 
@@ -101,7 +102,7 @@ class BuildPageCommand extends Command
 
             Storage::put($page, (string)$response->getContent());
         });
-
+*/
         $this->info('News pages generated');
 
         return $this;
