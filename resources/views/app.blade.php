@@ -15,7 +15,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ !request()->routeIs('index') ? 'active' : '' }}"
-                           href="{{ url('/list') }}">Прямо сейчас</a>
+                           href="/list">Прямо сейчас</a>
                     </li>
                 </ul>
             </div>
