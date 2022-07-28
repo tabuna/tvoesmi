@@ -69,7 +69,7 @@ class BuildPageCommand extends Command
         foreach (Route::getRoutes() as $route) {
             $page = Str::contains($route->getName(), 'feeds')
                 ? $route->getName() . '.xml'
-                : $page = $route->getName() . '.html';
+                : $route->getName() . '.html';
 
 
             $response = $this->createRequest($route->uri());

@@ -13,6 +13,8 @@ class Link
      */
     public static function to(string $url)
     {
+        return url($url);
+
         if (config('app.env') === 'production') {
             return Str::of(url($url.'.html'))->replaceFirst(config('app.url'), '');
         }
@@ -29,6 +31,8 @@ class Link
      */
     public static function route($name, $parameters = [], $absolute = true)
     {
+        return route($name, $parameters, $absolute);
+
         if (config('app.env') === 'production') {
             return Str::of(route($name, $parameters, $absolute).'.html')->replaceFirst(config('app.url'), '');
         }
