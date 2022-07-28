@@ -10,7 +10,7 @@
 <meta name="color-scheme" content="light dark">
 
 <meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#36393fcf" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 
 <meta name="msapplication-starturl" content="/login">
 

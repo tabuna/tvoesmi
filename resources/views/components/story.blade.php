@@ -54,10 +54,8 @@
             </div>
         </div>
 
-
-
         @if($single)
-            <p>
+            <p class="mb-0">
                 {!! Str::of($description)->words(25) !!}
             </p>
         @endif
