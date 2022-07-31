@@ -78,7 +78,6 @@ return [
         'https://life.ru/rss',
         'https://vz.ru/rss.xml',
         'https://www.ridus.ru/rss/news',
-        /*
 'https://www.fontanka.ru/rss.xml',
 'https://www.kommersant.ru/RSS/news.xml',
 'https://tvrain.ru/export/rss/all.xml',
@@ -116,8 +115,7 @@ return [
 'https://roskomsvoboda.org/feed/',
 'https://ura.news/rss',
 'https://cherta.media/feed/',
-*/
-/*
+        
         'http://www.aif.ru/rss/news.php',
         'http://lenta.ru/rss/',
         'http://www.rian.ru/export/rss2/index.xml',
@@ -153,7 +151,6 @@ return [
         'https://ria.ru/export/rss2/archive/index.xml',
         'https://eadaily.com/ru/rss/index.xml',
         'https://www.vtimes.io/rss',
-*/
 
         // foreign
         'https://gordonua.com/xml/rss_category/top.html',
