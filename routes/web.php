@@ -26,7 +26,7 @@ $index = [
 //dd(Source::getSimilarNews());
 
 Route::view('/', 'index', $index)->name('index');
-Route::get('/sources/{id}', function (string $id){
+Route::get('/sources/{id}/source', function (string $id){
     $group = Source::getSimilarNews()->mapWithKeys(function($items, $key){
         return [md5($key) => $items];
     })->get($id);
