@@ -4,7 +4,7 @@
         <div>{{ $domain }}</div>
     </div>
     <h5 class="mb-1">
-        <a href="{{ $link }}" data-turbo-action="replace" rel="noopener">{{ $title }}</a>
+        <a href="{{ $link }}" data-turbo-action="replace" target="_blank" rel="noopener">{{ $title }}</a>
     </h5>
     <time class="me-1 text-muted small" datetime="{{ $pubDate }}" data-controller="news-time">
         {{ $pubDate }}
