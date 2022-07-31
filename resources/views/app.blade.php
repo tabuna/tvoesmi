@@ -4,7 +4,7 @@
 @include('particles.navigation')
 
 
-<div class="d-md-none sticky-top mt-2 bg-color">
+<div class="d-md-none sticky-top mt-2 bg-color" id="mobile-sticky-menu" data-turbo-permanent>
     <div class="container">
         <div class="card">
             <div class="card-body p-2 text-center">
