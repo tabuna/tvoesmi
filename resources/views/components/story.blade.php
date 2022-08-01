@@ -1,8 +1,8 @@
-<article class="card mb-4 rounded" target="_top">
+<article class="card mb-4 rounded">
 
     @empty(!$image)
         <div class="col-12 col-auto"> <!-- col-md-5 -->
-            <a href="{{ App\Link::route('sources', md5($key)) }}" class="d-block">
+            <a href="{{ App\Link::route('sources', md5($key)) }}" class="d-block" data-turbo-frame="_top">
                 <img
                     src="{{ $image }}"
                     class="card-img-top img-full"
@@ -19,7 +19,7 @@
                 <div class="row">
                     <div class="col d-flex flex-column">
                         <h2 class="text-dark font-weight-bolder">
-                            <a href="{{  App\Link::route('sources', md5($key)) }}">{{$title}}</a>
+                            <a href="{{  App\Link::route('sources', md5($key)) }}" data-turbo-frame="_top">{{$title}}</a>
                         </h2>
 
                         <div class="d-flex align-items-center mb-2">
@@ -90,5 +90,5 @@
          --}}
     </div>
 
-    <a href="{{  App\Link::route('sources', md5($key)) }}" class="stretched-link"></a>
+    <a href="{{  App\Link::route('sources', md5($key)) }}" class="stretched-link" data-turbo-frame="_top"></a>
 </article>
