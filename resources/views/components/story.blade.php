@@ -1,4 +1,4 @@
-<article class="card mb-4 rounded">
+<article class="card mb-4 rounded" target="_top">
 
     @empty(!$image)
         <div class="col-12 col-auto"> <!-- col-md-5 -->
