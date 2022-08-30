@@ -67,7 +67,7 @@ return [
     | RSS Feed
     |--------------------------------------------------------------------------
     |
-    | ...
+    | ... 
     |
     */
 
@@ -99,7 +99,17 @@ return [
         "https://www.rnd.de/arc/outboundfeeds/rss/", 
         "https://www.nd-aktuell.de/rss/aktuell.php", 
         "https://de.euronews.com/rss?format=mrss&level=vertical&name=my-europe",
-        
+        "https://taz.de/rss.xml",
+        "https://www.nzz.ch/recent.rss",
+        "https://www.bazonline.ch/sitemaps/news.xml",
+        "https://www.berliner-zeitung.de/feed.xml",
+        "https://www.ruhrnachrichten.de/feed/",
+        "https://www.hellwegeranzeiger.de/feed/",
+        "https://www.derwesten.de/rss",
+        "https://www.tz.de/rssfeed.rdf",
+        "https://www.ksta.de/feed/index.rss",
+        "https://www.mopo.de/feed/",
+        // https://newstral.com/de
         
         
         
