@@ -72,7 +72,39 @@ return [
     */
 
     'rss' => [
+        "https://www.tagesschau.de/xml/rss2/",
+        "https://www.mdr.de/nachrichten/mdr-homepage-146-rss.xml",
+        "https://www.n-tv.de/rss",
+        "https://www.welt.de/sitemaps/newssitemap/newssitemap.xml",
+        "https://www.spiegel.de/index.rss",
+        "https://www.zdf.de/rss/zdf/nachrichten",
+        "https://feeds.t-online.de/rss/nachrichten",
+        "https://newsfeed.zeit.de/index",
+        "https://rss.dw.com/xml/rss-de-all",
+        "https://www.tagesspiegel.de/contentexport/feed/home",
+        "https://www.bild.de/rssfeeds/vw-alles/vw-alles-26970192,dzbildplus=false,sort=1,teaserbildmobil=false,view=rss2,wtmc=ob.feed.bild.xml",
+        "https://www.faz.net/rss/aktuell/",
+        "https://rss.sueddeutsche.de/app/service/rss/alles/index.rss?output=rss",
+        "https://www.handelsblatt.com/contentexport/feed/schlagzeilen", 
+        "https://www.handelsblatt.com/contentexport/feed/wirtschaft", 
+        "https://rss.focus.de/", 
+        "https://www.deutschlandfunk.de/nachrichten-100.rss", 
+        "https://www.ndr.de/homepage985-rss2.xml",
+        "https://www.br.de/radio/bayern1/bayern-eins108~rss.xml", 
+        "https://www.br.de/radio/bayern2/bayern-zwei-120~rss.xml",
+        "https://www.stern.de/feed/standard/alle-nachrichten/", 
+        "https://www.fr.de/news.xml", 
+        "https://newsfeed.kicker.de/news/aktuell", 
+        "https://www.rbb24.de/aktuell/index.xml/allitems=true/feed=rss/", 
+        "https://www.rnd.de/arc/outboundfeeds/rss/", 
+        "https://www.nd-aktuell.de/rss/aktuell.php", 
+        "https://de.euronews.com/rss?format=mrss&level=vertical&name=my-europe",
+        
+        
+        
+        
         // smi
+        /*
         'https://www.vedomosti.ru/rss/news',
         'https://istories.media/rss/all.xml',
         'https://life.ru/rss',
@@ -164,6 +196,7 @@ return [
 
 
         'https://rss.unian.net/site/news_rus.rss?',
+        */
     ],
     
     /*
