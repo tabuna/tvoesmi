@@ -24,7 +24,7 @@ return [
     |
     */
 
-    'period' => 12,
+    'period' => 16,
 
     /*
     |--------------------------------------------------------------------------
@@ -36,7 +36,7 @@ return [
     */
 
     'story'  => [
-        'percent'  => 70,
+        'percent'  => 65,
         'minCount' => 1,//3,
 
         // Time difference when groups cannot be combined at all
