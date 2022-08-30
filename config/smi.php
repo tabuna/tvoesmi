@@ -109,6 +109,16 @@ return [
         "https://www.tz.de/rssfeed.rdf",
         "https://www.ksta.de/feed/index.rss",
         "https://www.mopo.de/feed/",
+        "https://www.braunschweiger-zeitung.de/rss",
+        "https://www.stuttgarter-nachrichten.de/.rss.feed",
+        "https://www.tah.de/news/rss-feed.html",
+        "https://www.stuttgarter-zeitung.de/.rss.feed",
+        "https://www.verlagshaus-jaumann.de/.rss.feed",
+        "https://www.boerse-online.de/rss",
+        "https://www.european-news-agency.de/rss/",
+        "https://www.mallorcazeitung.es/rss/",
+        "https://www.kornwestheimer-zeitung.de/nachrichten.rss.feed",
+        "https://kobinet-nachrichten.org/feed/",
         // https://newstral.com/de
         
         
