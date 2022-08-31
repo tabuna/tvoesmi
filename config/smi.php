@@ -119,6 +119,13 @@ return [
         "https://www.mallorcazeitung.es/rss/",
         "https://www.kornwestheimer-zeitung.de/nachrichten.rss.feed",
         "https://kobinet-nachrichten.org/feed/",
+        "https://www.nachrichtenleicht.de/nachrichtenleicht-nachrichten-100.rss",
+        "https://www.deutschlandfunk.de/nachrichten-100.rss",
+        "https://www.wn.de/rss/feed",
+        "https://www1.wdr.de/wissen/uebersicht-nachrichten-100.feed",
+        "https://deutsche-wirtschafts-nachrichten.de/feed/",
+        "https://www.waz.de/rss",
+        "https://www.merkur.de/deutschland/rssfeed.rdf",
         // https://newstral.com/de
         
         
