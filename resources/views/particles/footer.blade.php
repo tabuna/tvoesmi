@@ -1,4 +1,5 @@
 <footer class="footer mt-auto m-1">
+    <turbo-frame id="footer" target="_top" data-turbo-action="advance">
             {{--
             <div class="text-dark mb-2">
                 <x-logo/>
@@ -43,7 +44,7 @@
 
         @endforeach
 --}}
-
+    </turbo-frame>
     </div>
 
 </footer>
