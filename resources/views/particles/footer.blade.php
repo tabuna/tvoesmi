@@ -11,6 +11,9 @@
                 Из сообщений сервис формирует сюжеты, каждый сюжет — это подборка новостей об одном и том же событии.
             </p>
             <p>
+                <a href="{{ route('policy') }}">Политика конфиденциальности</a>
+            </p>
+            <p>
                 <small class="border p-2 rounded"> 18+ </small>
                 <small class="m-2 mb-2 text-muted">&copy; 2017-{{ date('Y') }}</small>
             </p>

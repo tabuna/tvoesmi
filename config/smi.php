@@ -35,12 +35,12 @@ return [
     |
     */
 
-    'story'  => [
-        'percent'  => 65,
-        'minCount' => 1,//3,
+    'story' => [
+        'percent'             => 65,
+        'minCount'            => 3,
 
         // Time difference when groups cannot be combined at all
-        'diff' => 18000, //seconds
+        'diff'                => 18000, //seconds
 
         // If the news was published at the same time, then increase the likelihood of their similarity
         'increasedPercentage' => [
@@ -58,7 +58,7 @@ return [
     |
     */
 
-    'news'  => [
+    'news' => [
         'renderCount' => 10,
     ],
 
@@ -67,7 +67,7 @@ return [
     | RSS Feed
     |--------------------------------------------------------------------------
     |
-    | ... 
+    | ...
     |
     */
 
@@ -85,19 +85,19 @@ return [
         "https://www.bild.de/rssfeeds/vw-alles/vw-alles-26970192,dzbildplus=false,sort=1,teaserbildmobil=false,view=rss2,wtmc=ob.feed.bild.xml",
         "https://www.faz.net/rss/aktuell/",
         "https://rss.sueddeutsche.de/app/service/rss/alles/index.rss?output=rss",
-        "https://www.handelsblatt.com/contentexport/feed/schlagzeilen", 
-        "https://www.handelsblatt.com/contentexport/feed/wirtschaft", 
-        "https://rss.focus.de/", 
-        "https://www.deutschlandfunk.de/nachrichten-100.rss", 
+        "https://www.handelsblatt.com/contentexport/feed/schlagzeilen",
+        "https://www.handelsblatt.com/contentexport/feed/wirtschaft",
+        "https://rss.focus.de/",
+        "https://www.deutschlandfunk.de/nachrichten-100.rss",
         "https://www.ndr.de/homepage985-rss2.xml",
-        "https://www.br.de/radio/bayern1/bayern-eins108~rss.xml", 
+        "https://www.br.de/radio/bayern1/bayern-eins108~rss.xml",
         "https://www.br.de/radio/bayern2/bayern-zwei-120~rss.xml",
-        "https://www.stern.de/feed/standard/alle-nachrichten/", 
-        "https://www.fr.de/news.xml", 
-        "https://newsfeed.kicker.de/news/aktuell", 
-        "https://www.rbb24.de/aktuell/index.xml/allitems=true/feed=rss/", 
-        "https://www.rnd.de/arc/outboundfeeds/rss/", 
-        "https://www.nd-aktuell.de/rss/aktuell.php", 
+        "https://www.stern.de/feed/standard/alle-nachrichten/",
+        "https://www.fr.de/news.xml",
+        "https://newsfeed.kicker.de/news/aktuell",
+        "https://www.rbb24.de/aktuell/index.xml/allitems=true/feed=rss/",
+        "https://www.rnd.de/arc/outboundfeeds/rss/",
+        "https://www.nd-aktuell.de/rss/aktuell.php",
         "https://de.euronews.com/rss?format=mrss&level=vertical&name=my-europe",
         "https://taz.de/rss.xml",
         "https://www.nzz.ch/recent.rss",
@@ -127,9 +127,8 @@ return [
         "https://www.waz.de/rss",
         "https://www.merkur.de/deutschland/rssfeed.rdf",
         // https://newstral.com/de
-        
-        
-        
+
+
         // smi
         /*
         'https://www.vedomosti.ru/rss/news',
@@ -137,44 +136,44 @@ return [
         'https://life.ru/rss',
         'https://vz.ru/rss.xml',
         'https://www.ridus.ru/rss/news',
-'https://www.fontanka.ru/rss.xml',
-'https://www.kommersant.ru/RSS/news.xml',
-'https://tvrain.ru/export/rss/all.xml',
-'https://meduza.io/rss/news',
+        'https://www.fontanka.ru/rss.xml',
+        'https://www.kommersant.ru/RSS/news.xml',
+        'https://tvrain.ru/export/rss/all.xml',
+        'https://meduza.io/rss/news',
 
-'https://tjournal.ru/rss',
-'https://zona.media/rss',
-'https://rtvi.com/rss',
-'https://takiedela.ru/feed/',
-'https://paperpaper.ru/feed/',
-'https://www.yuga.ru/articles.rss',
-'https://tayga.info/rss',
-'https://7x7-journal.ru/rss/default.xml',
-'https://mash.ru/rss',
-'https://eadaily.com/ru/rss/index.xml',
-'https://www.vtimes.io/rss',
-'https://holod.media/feed/',
-'https://verstka.media/feed/',
-'https://kedr.media/feed',
-'https://novayagazeta.eu/feed/rss',
-'https://vc.ru/rss',
-'https://www.rosbalt.ru/feed/',
-'https://republic.ru/export/all.xml',
-'https://graniru.org/export/all-atom.xml',
-'https://www.svoboda.org/api/',
-'https://feeds.bbci.co.uk/russian/rss.xml',
-'https://ovdinfo.org/rss.xml',
-'https://navalny.com/blog/post.rss',
-'https://theins.ru/feed',
-'https://rss.dw.com/xml/rss-ru-all',
-'https://thebell.io/feed',
-'https://www.golosameriki.com/api/',
-'https://paperpaper.ru/feed/',
-'https://www.the-village.ru/api/spaces/2/rss.xml',
-'https://roskomsvoboda.org/feed/',
-'https://ura.news/rss',
-'https://cherta.media/feed/',
-        
+        'https://tjournal.ru/rss',
+        'https://zona.media/rss',
+        'https://rtvi.com/rss',
+        'https://takiedela.ru/feed/',
+        'https://paperpaper.ru/feed/',
+        'https://www.yuga.ru/articles.rss',
+        'https://tayga.info/rss',
+        'https://7x7-journal.ru/rss/default.xml',
+        'https://mash.ru/rss',
+        'https://eadaily.com/ru/rss/index.xml',
+        'https://www.vtimes.io/rss',
+        'https://holod.media/feed/',
+        'https://verstka.media/feed/',
+        'https://kedr.media/feed',
+        'https://novayagazeta.eu/feed/rss',
+        'https://vc.ru/rss',
+        'https://www.rosbalt.ru/feed/',
+        'https://republic.ru/export/all.xml',
+        'https://graniru.org/export/all-atom.xml',
+        'https://www.svoboda.org/api/',
+        'https://feeds.bbci.co.uk/russian/rss.xml',
+        'https://ovdinfo.org/rss.xml',
+        'https://navalny.com/blog/post.rss',
+        'https://theins.ru/feed',
+        'https://rss.dw.com/xml/rss-ru-all',
+        'https://thebell.io/feed',
+        'https://www.golosameriki.com/api/',
+        'https://paperpaper.ru/feed/',
+        'https://www.the-village.ru/api/spaces/2/rss.xml',
+        'https://roskomsvoboda.org/feed/',
+        'https://ura.news/rss',
+        'https://cherta.media/feed/',
+
         'http://www.aif.ru/rss/news.php',
         'http://lenta.ru/rss/',
         'http://www.rian.ru/export/rss2/index.xml',
@@ -225,7 +224,7 @@ return [
         'https://rss.unian.net/site/news_rus.rss?',
         */
     ],
-    
+
     /*
     |--------------------------------------------------------------------------
     | Ignore
@@ -237,7 +236,7 @@ return [
 
     'ignore' => [
         'covers' => [
-            'images/zenvz.jpg', // https://vz.ru/images/zenvz.jpg
+            //'images/zenvz.jpg', // https://vz.ru/images/zenvz.jpg
         ],
     ],
 
@@ -251,11 +250,12 @@ return [
     */
 
     'tags' => [
-        //[
-        //    'slug'     => \Illuminate\Support\Str::slug('Навальный'),
-        //    'name'     => 'Навальный',
-        //    'contains' => 'Навальный', 'ФБК', 'Навальн',
-        //],
+        /*
+        [
+            'slug'     => \Illuminate\Support\Str::slug('Навальный'),
+            'name'     => 'Навальный',
+            'contains' => 'Навальный', 'ФБК', 'Навальн',
+        ],
         [
             'slug'     => \Illuminate\Support\Str::slug('COVID-19'),
             'name'     => 'COVID-19',
@@ -271,11 +271,12 @@ return [
             'name'     => 'Беларусь',
             'contains' => 'Беларус', 'Беларус', 'Тихановск', 'Минск', 'Лукашенк'
         ],
-        //[
-        //    'slug'     => \Illuminate\Support\Str::slug('Северный поток'),
-        //    'name'     => 'Северный поток',
-        //    'contains' => 'Северный поток',
-        //],
+        [
+            'slug'     => \Illuminate\Support\Str::slug('Северный поток'),
+            'name'     => 'Северный поток',
+            'contains' => 'Северный поток',
+        ],
+        */
     ],
 
 ];

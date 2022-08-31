@@ -1,11 +1,11 @@
-@extends('app')
+@extends('html')
 
 @section('title', 'Privacy Policy')
 @section('description', 'This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.')
 
-@section('content')
+@section('html')
 
-
+<div class="container py-3">
     <h1>Privacy Policy</h1>
     <p>Last updated: April 05, 2022</p>
     <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
@@ -227,5 +227,7 @@
     <ul>
         <li>By email: bliz48rus@gmail.com</li>
     </ul>
+
+</div>
 
 @endsection
