@@ -139,6 +139,10 @@ class DownloadRssCommand extends Command
             return null;
         }
 
+        if ($news->pubDate->isAfter(now())) {
+            return null;
+        }
+
         return $news;
     }
 }
