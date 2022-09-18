@@ -5,12 +5,12 @@
                 <x-logo/>
             </div>
             --}}
-            <p class="text-muted">
-                Wir sind ein Nachrichten-Aggregator.
-                Alle fünf Minuten sammelt der Dienst Nachrichten aus verschiedenen Quellen und stellt ein Nachrichtenbild des Tages zusammen.
-                Dies geschieht automatisch, ohne dass ein Mensch eingreifen muss. Der Dienst generiert aus den Nachrichten Geschichten;
-                jede Geschichte ist eine Zusammenstellung von Nachrichten über dasselbe Ereignis.
-            </p>
+        <p class="text-muted">
+            Alle fünf Minuten sammelt der Dienst Nachrichten aus verschiedenen Quellen und stellt eine
+            Nachrichtenübersicht des Tages zusammen. Dies geschieht automatisch, ohne dass manuelle Eingriffe notwendig
+            sind.. Der Dienst generiert aus den Nachrichten Geschichten; jede Geschichte ist eine Zusammenstellung von
+            Nachrichten über dasselbe Ereignis.
+        </p>
             <p>
                 <a href="{{ route('policy') }}">Datenschutzbestimmungen</a>
             </p>
