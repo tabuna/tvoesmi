@@ -15,7 +15,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ !request()->routeIs('index') ? 'active' : '' }}"
-                               href="{{ App\Link::to('/list') }}" data-turbo-action="replace">Aktueller Newsfeed</a>
+                               href="{{ App\Link::to('/list') }}" data-turbo-action="replace">Neueste Nachrichten</a>
                         </li>
                     </ul>
                 </div>
