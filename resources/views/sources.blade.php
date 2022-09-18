@@ -1,6 +1,6 @@
 @extends('modal')
 
-@section('title', 'Источники')
+@section('title', 'Nachrichtenquellen')
 
 @section('content')
 
