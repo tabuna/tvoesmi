@@ -44,7 +44,7 @@
                             </div>
                             --}}
 
-                            <time class="text-muted small" datetime="{{ $pubDate }}" data-controller="news-time">
+                            <time class="text-muted small text-capitalize" datetime="{{ $pubDate }}" data-controller="news-time">
                                 {{ $pubDate }}
                             </time>
 

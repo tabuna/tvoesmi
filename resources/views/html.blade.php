@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
-    <title>@yield('title','Твоё СМИ - Новостной агрегатор')</title>
+    <title>@yield('title','Titanson - Nachrichten-Aggregator')</title>
     <meta name="description"
-          content="@yield('description','Самые горячие новости в России, в США, в мире. Последние события в мире новостей.')">
+          content="@yield('description','Die heißesten Nachrichten und die neuesten Entwicklungen in der Nachrichtenwelt.')">
     <meta name="keywords"
-          content="@yield('keywords','Новости, вести, события, последние, горячее, в мире, в России, в США.')">
+          content="@yield('keywords','Nachrichten, Ereignisse, aktuell, heiß, in der Welt.')">
 
     <link rel="stylesheet" type="text/css" href="{{mix('/css/light.css')}}" media="(prefers-color-scheme: light)">
     <link rel="stylesheet" type="text/css" href="{{mix('/css/dark.css')}}" media="(prefers-color-scheme: dark)">
 
     {{-- Open Graph --}}
     <meta property="og:title"
-          content="@yield('title','Твоё СМИ - Новостной агрегатор. Самые последний и свежие новости в России, в сети, в мире. Узнавайте новости первыми.')"/>
+          content="@yield('title','Titanson - Nachrichten-Aggregator')"/>
     <meta property="og:description"
-          content="@yield('description','Самые горячие новости в России, в США, в мире. Последние события в мире новостей.')"/>
+          content="@yield('description','Die heißesten Nachrichten und die neuesten Entwicklungen in der Nachrichtenwelt.')"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="@yield('image',asset('/img/cover.jpg'))"/>
     <meta property="og:url" content="{{ url()->current() }}">

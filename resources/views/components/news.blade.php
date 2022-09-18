@@ -6,7 +6,7 @@
     <h5 class="mb-1">
         <a href="{{ $link }}" data-turbo="false" target="_blank" rel="noopener">{{ $title }}</a>
     </h5>
-    <time class="me-1 text-muted small" datetime="{{ $pubDate }}" data-controller="news-time">
+    <time class="me-1 text-muted small text-capitalize" datetime="{{ $pubDate }}" data-controller="news-time">
         {{ $pubDate }}
     </time>
 </div>

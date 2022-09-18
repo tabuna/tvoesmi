@@ -9,11 +9,11 @@
             <div class="card">
                 <div class="card-body p-2 text-center">
                     <ul class="nav nav-pills nav-justified">
-                        <li class="nav-item">
+                        <li class="nav-item text-wrap text-truncate">
                             <a class="nav-link {{ request()->routeIs('index') ? 'active' : '' }}"
                                href="/index.html" data-turbo-action="replace">Heute Wichtig</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item text-wrap text-truncate">
                             <a class="nav-link {{ !request()->routeIs('index') ? 'active' : '' }}"
                                href="{{ App\Link::to('/list') }}" data-turbo-action="replace">Neueste Nachrichten</a>
                         </li>
@@ -28,11 +28,13 @@
 
         <main id="app" class="py-md-4 py-3">
 
+            {{--
             <div class="{{ request()->routeIs('index') ? 'd-md-none' : 'd-none' }} card mb-3">
                 <div class="card-body p-2 text-center">
                     <x-exchange/>
                 </div>
             </div>
+            --}}
 
             <div class="news-ended">
 

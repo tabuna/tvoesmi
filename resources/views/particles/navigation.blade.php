@@ -2,7 +2,7 @@
     <div class="px-md-5 bg-dark">
         <div class="container">
             <div class="d-flex flex-md-row justify-content-start align-items-center">
-                <a href="{{ App\Link::to('/') }}" data-turbo-action="replace" class="text-black me-auto" title="Твоё СМИ - Новостной агрегатор.">
+                <a href="{{ App\Link::to('/') }}" data-turbo-action="replace" class="text-black me-auto" title="Heute Wichtig">
                     <x-logo/>
                 </a>
 
@@ -26,11 +26,7 @@
                 </ul>
                 --}}
 
-                <div class="form-check form-switch d-block d-md-none">
-                    <input class="form-check-input" type="checkbox" id="toggleMobileView" data-action="change->main#toggleMobileView">
-                    <label class="form-check-label text-white" for="toggleMobileView">Показывать по порядку</label>
-                </div>
-
+                {{--
                 <div class="my-2 my-md-0 d-none d-md-inline">
                     <x-exchange/>
 
@@ -43,6 +39,7 @@
                         <span data-current-time-target="minutes">-</span>
                     </div>
                 </div>
+                --}}
             </div>
         </div>
     </div>
