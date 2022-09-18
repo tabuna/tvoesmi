@@ -6,13 +6,13 @@
             </div>
             --}}
             <p class="text-muted">
-                Мы агрегатор новостных сообщений.
-                Каждые пять минут сервис собирает сообщения из различных источников и составляет новостную картину дня.
-                Это происходит автоматически, без какого-либо вмешательства человека.
-                Из сообщений сервис формирует сюжеты, каждый сюжет — это подборка новостей об одном и том же событии.
+                Wir sind ein Nachrichten-Aggregator.
+                Alle fünf Minuten sammelt der Dienst Nachrichten aus verschiedenen Quellen und stellt ein Nachrichtenbild des Tages zusammen.
+                Dies geschieht automatisch, ohne dass ein Mensch eingreifen muss. Der Dienst generiert aus den Nachrichten Geschichten;
+                jede Geschichte ist eine Zusammenstellung von Nachrichten über dasselbe Ereignis.
             </p>
             <p>
-                <a href="{{ route('policy') }}">Политика конфиденциальности</a>
+                <a href="{{ route('policy') }}">Datenschutzbestimmungen</a>
             </p>
             <p>
                 <small class="border p-2 rounded"> 18+ </small>
