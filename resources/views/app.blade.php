@@ -11,11 +11,11 @@
                     <ul class="nav nav-pills nav-justified">
                         <li class="nav-item">
                             <a class="nav-link {{ request()->routeIs('index') ? 'active' : '' }}"
-                               href="/index.html" data-turbo-action="replace">Важное сегодня</a>
+                               href="/index.html" data-turbo-action="replace">Heute Wichtig</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ !request()->routeIs('index') ? 'active' : '' }}"
-                               href="{{ App\Link::to('/list') }}" data-turbo-action="replace">Прямо сейчас</a>
+                               href="{{ App\Link::to('/list') }}" data-turbo-action="replace">Aktueller Newsfeed</a>
                         </li>
                     </ul>
                 </div>
