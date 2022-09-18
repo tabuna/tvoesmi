@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', 'Важное сегодня')
+@section('title', 'Heute Wichtig')
 
 @section('content')
 
