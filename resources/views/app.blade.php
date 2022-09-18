@@ -9,11 +9,11 @@
             <div class="card">
                 <div class="card-body p-2 text-center">
                     <ul class="nav nav-pills nav-justified">
-                        <li class="nav-item text-wrap text-truncate">
+                        <li class="nav-item text-truncate">
                             <a class="nav-link {{ request()->routeIs('index') ? 'active' : '' }}"
                                href="/index.html" data-turbo-action="replace">Heute Wichtig</a>
                         </li>
-                        <li class="nav-item text-wrap text-truncate">
+                        <li class="nav-item text-truncate">
                             <a class="nav-link {{ !request()->routeIs('index') ? 'active' : '' }}"
                                href="{{ App\Link::to('/list') }}" data-turbo-action="replace">Neueste Nachrichten</a>
                         </li>
