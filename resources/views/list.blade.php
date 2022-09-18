@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', 'Последние новости')
+@section('title', 'Neueste Nachrichten')
 
 @section('content')
 
@@ -11,7 +11,7 @@
         >
             {{--
             <div class="mb-3 mt-2">
-                <h1 class="h5 text-muted font-weight-bold text-uppercase">Последние новости</h1>
+                <h1 class="h5 text-muted font-weight-bold text-uppercase">Neueste Nachrichten</h1>
             </div>
             --}}
             <div class="row row-cols-1" data-target="news.news">
