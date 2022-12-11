@@ -30,7 +30,3 @@ Contributions to the News Aggregator service are welcome. To contribute, follow 
 2. Create a new branch for your changes.
 3. Make the required changes and commit them to your branch.
 4. Push your branch to your fork and submit a pull request.
-
-## License
-
-The News Aggregator service is licensed under the [MIT license](LICENSE).
