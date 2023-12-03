@@ -72,6 +72,7 @@ return [
     */
 
     'rss' => [
+    /*
         "https://www.tagesschau.de/xml/rss2/",
         "https://www.mdr.de/nachrichten/mdr-homepage-146-rss.xml",
         "https://www.n-tv.de/rss",
@@ -127,10 +128,10 @@ return [
         "https://www.waz.de/rss",
         "https://www.merkur.de/deutschland/rssfeed.rdf",
         // https://newstral.com/de
-
+*/
 
         // smi
-        /*
+      
         'https://www.vedomosti.ru/rss/news',
         'https://istories.media/rss/all.xml',
         'https://life.ru/rss',
@@ -138,10 +139,10 @@ return [
         'https://www.ridus.ru/rss/news',
         'https://www.fontanka.ru/rss.xml',
         'https://www.kommersant.ru/RSS/news.xml',
-        'https://tvrain.ru/export/rss/all.xml',
-        'https://meduza.io/rss/news',
+        //'https://tvrain.ru/export/rss/all.xml',
+        //'https://meduza.io/rss/news',
 
-        'https://tjournal.ru/rss',
+        //'https://tjournal.ru/rss',
         'https://zona.media/rss',
         'https://rtvi.com/rss',
         'https://takiedela.ru/feed/',
@@ -211,18 +212,17 @@ return [
         'https://www.vtimes.io/rss',
 
         // foreign
-        'https://gordonua.com/xml/rss_category/top.html',
-        'https://nexta.news/feed/',
-        'https://www.belta.by/rss',
-        'https://telegraf.by/feed/',
+        //'https://gordonua.com/xml/rss_category/top.html',
+        //'https://nexta.news/feed/',
+        //'https://www.belta.by/rss',
+        //'https://telegraf.by/feed/',
 
 
         // blogs
-        'https://varlamov.ru/data/rss',
+        //'https://varlamov.ru/data/rss',
 
 
-        'https://rss.unian.net/site/news_rus.rss?',
-        */
+        //'https://rss.unian.net/site/news_rus.rss?',
     ],
 
     /*
