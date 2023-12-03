@@ -236,7 +236,7 @@ return [
 
     'ignore' => [
         'covers' => [
-            //'images/zenvz.jpg', // https://vz.ru/images/zenvz.jpg
+            'images/zenvz.jpg', // https://vz.ru/images/zenvz.jpg
         ],
     ],
 
