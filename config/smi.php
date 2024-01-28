@@ -253,7 +253,7 @@ return [
         [
             'slug'     => \Illuminate\Support\Str::slug('Украина'),
             'name'     => 'Украина',
-            'contains' => 'украи', 'Киев'
+            'contains' => 'Украи', 'Киев'
         ],
         [
             'slug'     => \Illuminate\Support\Str::slug('Путин'),
