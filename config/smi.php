@@ -250,6 +250,21 @@ return [
     */
 
     'tags' => [
+        [
+            'slug'     => \Illuminate\Support\Str::slug('Украина'),
+            'name'     => 'Украина',
+            'contains' => 'украи', 'Киев'
+        ],
+        [
+            'slug'     => \Illuminate\Support\Str::slug('Путин'),
+            'name'     => 'Путин',
+            'contains' => 'путин', 'СВО'
+        ],
+        [
+            'slug'     => \Illuminate\Support\Str::slug('США'),
+            'name'     => 'США',
+            'contains' => 'США', 'байден', 'техас', 'белый дом',
+        ],
         /*
         [
             'slug'     => \Illuminate\Support\Str::slug('Навальный'),
