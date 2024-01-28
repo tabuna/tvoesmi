@@ -258,7 +258,7 @@ return [
         [
             'slug'     => \Illuminate\Support\Str::slug('Путин'),
             'name'     => 'Путин',
-            'contains' => 'Путин', 'СВО'
+            'contains' => 'Путин', 'СВО',
         ],
         [
             'slug'     => \Illuminate\Support\Str::slug('США'),
