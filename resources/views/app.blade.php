@@ -15,7 +15,7 @@
                         </li>
                         <li class="nav-item text-truncate">
                             <a class="nav-link {{ !request()->routeIs('index') ? 'active' : '' }}"
-                               href="{{ App\Link::to('/list') }}" data-turbo-action="replace">Neueste Nachrichten</a>
+                               href="{{ App\Link::to('/list') }}" data-turbo-action="replace">Последние новости</a>
                         </li>
                     </ul>
                 </div>
