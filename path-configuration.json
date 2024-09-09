@@ -1,0 +1,17 @@
+{
+    "settings": {
+        "enable-feature-x": true
+    },
+    "rules": [
+        {
+            "patterns": [
+                "/new$",
+                "/edit$",
+                "/sources$"
+            ],
+            "properties": {
+                "presentation": "modal"
+            }
+        }
+    ]
+}

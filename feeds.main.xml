@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title><![CDATA[My feed]]></title>
+        <link><![CDATA[http://titanson.github.io/feeds.main]]></link>
+        <description><![CDATA[The description of the feed.]]></description>
+        <language>ru-RU</language>
+        <pubDate>2024-09-09T05:09:00+00:00</pubDate>
+
+                    <item>
+                <title><![CDATA[Бабушкин победил на выборах губернатора Астраханской области]]></title>
+                <link>https://titanson.github.io/news/3ef91f4d</link>
+                <description><![CDATA[#Действующий губернатор ##Астраханской области #Игорь #Бабушкин одерживает победу на выборах главы региона после обработки #100% голосов, следует из данных на табло ЦИК]]></description>
+                <author><![CDATA[www.interfax.ru]]></author>
+                <guid isPermaLink="false">2024-09-09-0352003ef91f4d</guid>
+                <pubDate>Mon, 09 Sep 2024 03:52:00 +0000</pubDate>
+                                    <enclosure url="https://img.vz.ru/upimg/soc/soc_1286197.jpg" length="0" type="image/jpeg" />
+                                            </item>
+                    <item>
+                <title><![CDATA[Стало известно об особой жестокости наемников под Курском]]></title>
+                <link>https://titanson.github.io/news/a34c4524</link>
+                <description><![CDATA[]]></description>
+                <author><![CDATA[lenta.ru]]></author>
+                <guid isPermaLink="false">2024-09-09-035200a34c4524</guid>
+                <pubDate>Mon, 09 Sep 2024 03:52:00 +0000</pubDate>
+                                    <enclosure url="https://icdn.lenta.ru/images/2024/09/09/06/20240909065732923/pic_d6029fda236e188b91504d11f09766ab.jpg" length="0" type="image/jpeg" />
+                                            </item>
+                    <item>
+                <title><![CDATA[Экс-замгубернатора Томской области Гурдина приговорили к 5 годам колонии]]></title>
+                <link>https://titanson.github.io/news/4f34164f</link>
+                <description><![CDATA[#Советский районный суд #Томска приговорил экс-замгубернатора региона по инвестиционной политике #Юрия ##Гурдина к пяти годам колонии за организацию растраты 79 миллионов рублей]]></description>
+                <author><![CDATA[360.ru]]></author>
+                <guid isPermaLink="false">2024-09-09-0509004f34164f</guid>
+                <pubDate>Mon, 09 Sep 2024 05:09:00 +0000</pubDate>
+                                    <enclosure url="https://media.360.ru/get_resized/4syMHP3-mNcO4mlga6XFhwOwI_Q=/961x518/filters:rs(fill-down):format(jpg)/YXJ0aWNsZXMvaW1hZ2UvMjAyNC85L2JyYW5jaC1saWdodC1mZW5jZS1ibGFjay1hbmQtd2hpdGUtcGVvcGxlLXdoaXRlLTEyMzI1OTctcHhoZXJlY29tLmpwZw.jpg" length="0" type="image/jpeg" />
+                                            </item>
+            </channel>
+</rss>
